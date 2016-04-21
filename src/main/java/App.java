@@ -20,14 +20,15 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    get("/results", (request, response)-> {
+    get("/results", (request, response) ->{
       HashMap model = new HashMap();
-      CoinCombos coinOutput = new CoinCombos();
-      Integer userOutput = Integer.parseInt(request.queryParams("money"));
-      model.put("output", coinOutput.changeConverter(userOutput));
+      AllergyScore allergyScore = new AllergyScore();
+      Integer score = Integer.parseInt(request.queryParams("score"));
+      model.put("score", allergyScore.allergySet(score));
       model.put("template", "templates/results.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
 
 
   }

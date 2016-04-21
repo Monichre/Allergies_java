@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CoinCombosTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-21T17:34:44" hostname="epicodus-69.local" time="0.0">
+<testsuite name="CoinCombosTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-21T23:39:14" hostname="epicodus-69.local" time="0.0">
   <properties/>
   <testcase name="CoinCombos_ReturnValueModulo25_true" classname="CoinCombosTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
